@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
-        splash: Image.asset('images/chaticon.png'),
+        splash: Image.asset(
+          'images/chaticon.png',
+          scale: 5.0,
+        ),
         nextScreen: HomePage(),
         splashTransition: SplashTransition.scaleTransition,
       ),
